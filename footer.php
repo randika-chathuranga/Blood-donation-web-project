@@ -1,7 +1,3 @@
-<?php
-include('./header.php')
-?>
-
 <footer>
     <div class="social">
         <i class="fab fa-facebook-square"></i>
