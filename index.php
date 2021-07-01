@@ -1,7 +1,8 @@
 <?php
 
- require("public/Server.php");
+require("private/Server.php");
+include("private/Path.php");
 
- Server::execute();
+Server::execute();
 
 ?>
