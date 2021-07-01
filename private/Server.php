@@ -6,8 +6,7 @@ class Server{
     
     
     public static function execute(){
-
-        Route.run();
+      Route::run();
     }
 
 
