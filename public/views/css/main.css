@@ -22,3 +22,71 @@ h1 {
 .ft{
     margin-left: 20px;
 }
+
+/*styles for nav bar & nav links*/
+#navbarNav li a {
+    color: black;
+}
+
+#navbarNav li a:hover {
+    color: red;
+}
+
+#navbarNav li span a:hover {
+    color: white;
+}
+
+.nav-link {
+    font-size: 20px;
+}
+
+img {
+    width: 250px;
+    height: 80px;
+}
+
+.navbar-nav {
+    margin-left: 40px;
+    padding-top: 5px;
+
+}
+
+.nav-item {
+    padding: 0 20px;
+}
+
+/* styles for additional login and register btns*/
+.nav-item-span {
+    margin-left: 500px;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.nav-item-span a {
+    text-decoration: none;
+    padding: 10px;
+    background: lightsteelblue;
+    border-radius: 10px;
+}
+
+/*styles for footer*/
+.social {
+    text-align: center;
+}
+
+.social i {
+    padding: 0 10px;
+    font-size: 30px;
+
+}
+
+.copyright {
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+}

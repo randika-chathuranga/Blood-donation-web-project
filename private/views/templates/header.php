@@ -5,80 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="public/views/css/main.css" rel="stylesheet" type="text/css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
     <script src="https://kit.fontawesome.com/c84624a2ba.js" crossorigin="anonymous"></script>
     <title>blood donation web</title>
-    <style>
-        /*styles for nav bar & nav links*/
-        #navbarNav li a {
-            color: black;
-        }
-
-        #navbarNav li a:hover {
-            color: red;
-        }
-
-        #navbarNav li span a:hover {
-            color: white;
-        }
-
-        .nav-link {
-            font-size: 20px;
-        }
-
-        img {
-            width: 250px;
-            height: 80px;
-        }
-
-        .navbar-nav {
-            margin-left: 40px;
-            padding-top: 5px;
-
-        }
-
-        .nav-item {
-            padding: 0 20px;
-        }
-
-        /* styles for additional login and register btns*/
-        .nav-item-span {
-            margin-left: 500px;
-            text-align: center;
-            margin-top: -10px;
-        }
-
-        .nav-item-span a {
-            text-decoration: none;
-            padding: 10px;
-            background: lightsteelblue;
-            border-radius: 10px;
-        }
-
-        /*styles for footer*/
-        .social {
-            text-align: center;
-        }
-
-        .social i {
-            padding: 0 10px;
-            font-size: 30px;
-
-        }
-
-        .copyright {
-            text-align: center;
-        }
-
-        footer {
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-            height: 60px;
-        }
-    </style>
 </head>
 
 <body>
