@@ -9,9 +9,9 @@ class User extends Model{
     public $lastname;
     public $email;
 
-    function __construct($tableName,$firstname,$lastname,$email){
+    function __construct($firstname,$lastname,$email){
 
-        $this->tableName = $tableName;
+        $this->tableName = strtolower(static::class)."s";
         $this->firstname = $firstname;
         $this->lastname = $lastname;
         $this->email = $email;
