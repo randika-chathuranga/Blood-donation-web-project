@@ -3,7 +3,7 @@
 class Route
 {
 
-    private static array $routes = array();
+    private static $routes = array();
 
     public static function addPath($path, $func)
     {

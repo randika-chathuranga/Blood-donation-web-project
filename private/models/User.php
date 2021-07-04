@@ -1,5 +1,7 @@
 <?php
 
+require("Model.php");
+
 class User extends Model{
 
     public $tableName;
@@ -7,7 +9,7 @@ class User extends Model{
     public $lastname;
     public $email;
 
-    function setData($tableName,$firstname,$lastname,$email){
+    function __construct($tableName,$firstname,$lastname,$email){
 
         $this->tableName = $tableName;
         $this->firstname = $firstname;
