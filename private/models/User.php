@@ -4,17 +4,16 @@ require("Model.php");
 
 class User extends Model{
 
-    public $tableName;
+    static $tableName = "users";
+    public $firstName;
+    public $lastName;
     public $nic;
-    public $firstname;
-    public $lastname;
     public $email;
 
-    function __construct($firstname,$lastname,$email,$nic){
+    function __construct($firstName,$lastName,$email,$nic){
 
-        $this->tableName = strtolower(static::class)."s";
-        $this->firstname = $firstname;
-        $this->lastname = $lastname;
+        $this->firstName = $firstName;
+        $this->lastName = $lastName;
         $this->email = $email;
         $this->nic = new PrimaryKey($nic);
     }

@@ -18,13 +18,17 @@ class Connection{
             die("Connection failed: " . $connection->connect_error);
         }
 
-        if ($connection->query($sql) === TRUE) {
-            echo "New record created successfully";
+        $result = $connection->query($sql);
+
+        if ( $result == TRUE or $result != null) {
+            echo "sql statment executed sucessfully <br>";
         } else {
             echo "Error: " . $sql . "<br>" . $connection->error;
         }
 
         $connection->close();
+
+        return $result;
     }
 }
 
