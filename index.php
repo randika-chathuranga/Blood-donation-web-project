@@ -12,5 +12,6 @@ require("private/models/User.php");
 $user = new User("shan","Thiwanka","s@gmail.com",132);
 //$user->save();
 //$user->delete();
+User::fetch("nic",132);
 
 ?>

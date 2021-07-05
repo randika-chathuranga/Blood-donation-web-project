@@ -17,7 +17,6 @@ class Model{
                 $sqlVals = $sqlVals."'".$value->value."'".",";
 
             }else if($key != "tableName"){
-                
                 $sqlCols = $sqlCols.$key.",";
                 $sqlVals = $sqlVals."'".$value."'".",";
             }
@@ -30,7 +29,7 @@ class Model{
         $sqlCols = $sqlCols.")";
         $sqlVals = $sqlVals.")";
 
-        $sql = "INSERT INTO " . $this->tableName . " " .$sqlCols. " VALUES " . $sqlVals;
+        $sql = "INSERT INTO " . static::$tableName . " " .$sqlCols. " VALUES " . $sqlVals;
 
         Connection::execute($sql);
     }
@@ -45,8 +44,44 @@ class Model{
 
         }
 
-        $sql = "DELETE FROM " . $this->tableName . " WHERE ". $key . " = ". $value->value;
+        $sql = "DELETE FROM " . static::$tableName . " WHERE ". $key . " = ". $value->value;
         Connection::execute($sql);
+    }
+
+    static function fetch($column,$value){
+        
+        $sql = "SELECT * FROM " . static::$tableName . " WHERE ". $column . "=". $value;
+        
+        $result = Connection::execute($sql);
+
+        if ($result->num_rows > 0) {
+
+            $objects = array();
+
+            while($row = $result->fetch_assoc()) {
+
+                $values = array();
+
+                $reflectionClass = new ReflectionClass(static::class);
+                $properties = $reflectionClass->getProperties();
+
+                foreach ($properties as $value){
+
+                    if($value->getName() != "tableName"){
+                    array_push($values,$row[$value->getName()]);
+                    }
+    
+                }
+
+                $obj = $reflectionClass->newInstanceArgs($values);
+                array_push($objects, $obj);
+            }
+
+            return $objects;
+
+        }else{
+            echo "0 results";
+        }
     }
  
 }
