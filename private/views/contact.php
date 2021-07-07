@@ -1,4 +1,7 @@
-<?php include("templates/header.php") ?>
+<?php
+$styles = array("contact.css");
+include("templates/header.php");
+?>
     <div class="container-fluid background">
         <h1 align="center"><b>Contact Us</b></h1>
 
