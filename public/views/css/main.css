@@ -1,27 +1,3 @@
-.background{
-    background-color:  #da3e3e;
-}
-h1 {
-    color: rgb(8, 8, 8);
-    text-align: center;
-    font-family: "Times New Roman", Times, serif;
-}
-
-.a{
-    color:rgb(8, 8, 8);
-    font-family: "Times New Roman", Times, serif;
-}
-.b{
-    color:rgb(8, 8, 8);
-    font-family: "Times New Roman", Times, serif;
-}
-.c{
-    color:rgb(8, 8, 8);
-    font-family: "Times New Roman", Times, serif;
-}
-.ft{
-    margin-left: 20px;
-}
 
 /*styles for nav bar & nav links*/
 #navbarNav li a {
