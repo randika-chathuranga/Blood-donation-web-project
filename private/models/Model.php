@@ -5,7 +5,6 @@ require("Connection.php");
 class Model{
 
     function save(){
-
         $sqlCols = "(";
         $sqlVals = "(";
         
@@ -48,13 +47,13 @@ class Model{
 
         }
 
-        $sql = "DELETE FROM " . static::$tableName . " WHERE ". $key . " = ". $value->value;
+        $sql = "DELETE FROM " . static::$tableName . " WHERE ". $key . "='". $value->value."'";
         Connection::execute($sql);
     }
 
     static function fetch($column,$value){
         
-        $sql = "SELECT * FROM " . static::$tableName . " WHERE ". $column . "=". $value;
+        $sql = "SELECT * FROM " . static::$tableName . " WHERE ". $column . "='". $value . "'";
         
         $result = Connection::execute($sql);
 
@@ -85,7 +84,37 @@ class Model{
 
         }else{
             echo "0 results";
+            return null;
         }
+    }
+
+    function update(){
+
+        $sqlSet = ''; 
+
+        foreach ($this as $key=>$value){
+    
+            if(get_class((object)$value) == "PrimaryKey" )
+                $sqlSet = $sqlSet. ' ' .$key."='".$value->value."', ";
+
+            else if($key != "tableName")
+                $sqlSet = $sqlSet. ' ' .$key."='".$value."', ";
+
+        }
+
+        $sqlSet = substr($sqlSet, 0, -2);
+
+        $sql = "UPDATE " . static::$tableName . " SET ". $sqlSet;
+
+        foreach ($this as $key=>$value){
+            
+            if (get_class((object)$value) == "PrimaryKey")
+                break;
+        }
+
+        $sql = $sql . " WHERE ". $key . "='". $value->value."'";
+
+        Connection::execute($sql);
     }
  
 }
