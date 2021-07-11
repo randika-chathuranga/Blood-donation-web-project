@@ -16,7 +16,8 @@ class User extends Model{
     public $password;
 
     function __construct($data){
-
+        // data array (fullName => value,nic => value,genderdateOfBirth => value,bloodGroup => value,bodyWeight => value,adress => value,email => value,password => value)
+        
         $this->fullName = $data['fullName'];
         $this->nic = $data['nic'];
         $this->gender = $data['gender'];
