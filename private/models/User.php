@@ -5,17 +5,28 @@ require("Model.php");
 class User extends Model{
 
     static $tableName = "users";
-    public $firstName;
-    public $lastName;
+    public $fullName;
     public $nic;
+    public $gender;
+    public $dateOfBirth;
+    public $bloodGroup;
+    public $bodyWeight;
+    public $adress;
     public $email;
+    public $password;
 
-    function __construct($firstName,$lastName,$email,$nic){
+    function __construct($data){
 
-        $this->firstName = $firstName;
-        $this->lastName = $lastName;
-        $this->email = $email;
-        $this->nic = new PrimaryKey($nic);
+        $this->fullName = $data['fullName'];
+        $this->nic = $data['nic'];
+        $this->gender = $data['gender'];
+        $this->nic = new PrimaryKey($data['nic']);
+        $this->dateOfBirth = $data['dateOfBirth'];
+        $this->bloodGroup = $data['bloodGroup'];
+        $this->bodyWeight = $data['bodyWeight'];
+        $this->adress = $data['adress'];
+        $this->email = $data['email'];
+        $this->password = $data['password'];
     }
 }
 

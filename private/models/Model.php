@@ -11,17 +11,16 @@ class Model{
         
         foreach ($this as $key=>$value){
 
-            if(get_class((object)$value) == "PrimaryKey" ){
+            $sqlCols = $sqlCols.$key.",";
 
-                $sqlCols = $sqlCols.$key.",";
+            if(get_class((object)$value) == "PrimaryKey" )
                 $sqlVals = $sqlVals."'".$value->value."'".",";
 
-            }else if($key != "tableName"){
-                $sqlCols = $sqlCols.$key.",";
+            else if($key != "tableName")
                 $sqlVals = $sqlVals."'".$value."'".",";
-            }
 
         }
+        
 
         $sqlCols = substr($sqlCols, 0, -1);
         $sqlVals = substr($sqlVals, 0, -1);
@@ -29,6 +28,11 @@ class Model{
         $sqlCols = $sqlCols.")";
         $sqlVals = $sqlVals.")";
 
+        echo($sqlCols."<br>");
+        echo($sqlVals."<br>");
+
+        // INSERT INTO MyGuests (firstname, lastname, email) VALUES ('John', 'Doe', 'john@example.com')
+        
         $sql = "INSERT INTO " . static::$tableName . " " .$sqlCols. " VALUES " . $sqlVals;
 
         Connection::execute($sql);
@@ -68,12 +72,12 @@ class Model{
                 foreach ($properties as $value){
 
                     if($value->getName() != "tableName"){
-                    array_push($values,$row[$value->getName()]);
+                    $values[$value->getName()] = $row[$value->getName()];
                     }
     
                 }
 
-                $obj = $reflectionClass->newInstanceArgs($values);
+                $obj = $reflectionClass->newInstance($values);
                 array_push($objects, $obj);
             }
 
