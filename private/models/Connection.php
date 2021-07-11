@@ -21,9 +21,9 @@ class Connection{
         $result = $connection->query($sql);
 
         if ( $result == TRUE or $result != null) {
-            //echo "sql statment executed sucessfully <br>";
+            echo "sql statment executed sucessfully <br>";
         } else {
-            //echo "Error: " . $sql . "<br>" . $connection->error;
+            echo "Error: " . $sql . "<br>" . $connection->error;
         }
 
         $connection->close();

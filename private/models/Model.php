@@ -42,8 +42,7 @@ class Model{
     function delete(){
         // delete the record match with the child class instaince
         // read properties of the child class, get the primary key and create sql delete satement and execute from connection class
-        // identify the record to delete by the primary key
-
+        
         foreach ($this as $key=>$value){
 
             if (get_class((object)$value) == "PrimaryKey"){
@@ -53,8 +52,19 @@ class Model{
         }
 
         // "DELETE FROM table_name WHERE pk_column = value";
-        $sql = "DELETE FROM " . static::$tableName . " WHERE ". $key . "='". $value->value."'";
+        $sql = "DELETE FROM " . static::$tableName . " WHERE ". $key . "='". $value->value."'"; // identify the record to delete by the primary key
 
+        Connection::execute($sql);
+    }
+
+    public static function deleteByValue($column, $value){
+        // parameter - primarykey value of the record need to be deleted 
+        // delete the record match with the primaryKey value
+        // read properties of the child class, get the primary key property and create sql delete satement and execute from connection class
+
+        // "DELETE FROM table_name WHERE pk_column = value";
+        $sql = "DELETE FROM " . static::$tableName . " WHERE ". $column . "='". $value."'"; // identify the record to delete by the primary key
+        
         Connection::execute($sql);
     }
 
