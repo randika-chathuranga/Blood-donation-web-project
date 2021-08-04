@@ -4,7 +4,7 @@
      <!-- ******************** Slider Starts Here ******************* -->
      <div class="slider">
         <!-- Set up your HTML -->
-        <div class="owl-carousel ">
+        <div class="owl-carousel">
             <div class="slider-img">
                 <div class="item">
                     <div class="slider-img"><img src="public/images/slider/slider-3.jpg" alt=""></div>
@@ -118,20 +118,10 @@
                     <img src="public/images/causes/c1.jpg" alt="">
                 </div>
                 <div class="caus-info row no-margin">
-                    <span class="left-info col-6">
-                        RAISED: $764
-                    </span>
-                    <span class="rit-info text-right col-6">
-                       TARGET: $1500
-                    </span>
                 </div>
                 <div class="caus-detail">
                     <h4>1 - Registration</h4>
                     <p>he point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                </div>
-                
-                <div class="donat-btn">
-                    <button class="btn btn-danger"><i class="fas fa-hand-holding-usd"></i> Donate</button>
                 </div>
 
                 </div>
@@ -147,20 +137,10 @@
                     <img src="public/images/causes/c1.jpg" alt="">
                 </div>
                 <div class="caus-info row no-margin">
-                    <span class="left-info col-6">
-                        RAISED: $764
-                    </span>
-                    <span class="rit-info text-right col-6">
-                       TARGET: $1500
-                    </span>
                 </div>
                 <div class="caus-detail">
                     <h4>2 - Seeing</h4>
                     <p>he point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                </div>
-                
-                <div class="donat-btn">
-                    <button class="btn btn-danger"><i class="fas fa-hand-holding-usd"></i> Donate</button>
                 </div>
 
                 </div>
@@ -176,20 +156,10 @@
                     <img src="public/images/causes/c2.jpg" alt="">
                 </div>
                 <div class="caus-info row no-margin">
-                    <span class="left-info col-6">
-                        RAISED: $764
-                    </span>
-                    <span class="rit-info text-right col-6">
-                       TARGET: $1500
-                    </span>
                 </div>
                 <div class="caus-detail">
                     <h4>3 - Donation</h4>
                     <p>he point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                </div>
-                
-                <div class="donat-btn">
-                    <button class="btn btn-danger"><i class="fas fa-hand-holding-usd"></i> Donate</button>
                 </div>
 
             </div>
@@ -204,20 +174,10 @@
                     <img src="public/images/causes/c3.jpg" alt="">
                 </div>
                 <div class="caus-info row no-margin">
-                    <span class="left-info col-6">
-                        RAISED: $764
-                    </span>
-                    <span class="rit-info text-right col-6">
-                       TARGET: $1500
-                    </span>
                 </div>
                 <div class="caus-detail">
                     <h4>4 - Save Life</h4>
                     <p>he point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                </div>
-                
-                <div class="donat-btn">
-                    <button class="btn btn-danger"><i class="fas fa-hand-holding-usd"></i> Donate</button>
                 </div>
 
             </div>
@@ -341,5 +301,72 @@
             </div>
         </div>
     </div>   
+
+    <!--  ************************* Contact Us Starts Here ************************** -->
+
+    <div class="container" style="margin-top:50px;">
+            <div class="session-title row">
+            <h2>Contact US</h2>
+        </div>
+</div>
+    <div style="margin-top:50px;" class="row no-margin">
+
+        <iframe style="width:100%" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d249759.19784092825!2d79.10145254589841!3d12.009924873581818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1448883859107"  height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
+    </div>
+
+    <div class="row contact-rooo no-margin">
+        <div class="container">
+            <div class="row">
+
+
+                <div style="padding:20px" class="col-sm-7">
+                    <h2 >Contact Form</h2> <br>
+                    <div class="row cont-row">
+                        <div  class="col-sm-3"><label>Enter Name </label><span>:</span></div>
+                        <div class="col-sm-8"><input type="text" placeholder="Enter Name" name="name" class="form-control input-sm"  ></div>
+                    </div>
+                    <div  class="row cont-row">
+                        <div  class="col-sm-3"><label>Email Address </label><span>:</span></div>
+                        <div class="col-sm-8"><input type="text" name="name" placeholder="Enter Email Address" class="form-control input-sm"  ></div>
+                    </div>
+                    <div  class="row cont-row">
+                        <div  class="col-sm-3"><label>Mobile Number</label><span>:</span></div>
+                        <div class="col-sm-8"><input type="text" name="name" placeholder="Enter Mobile Number" class="form-control input-sm"  ></div>
+                    </div>
+                    <div  class="row cont-row">
+                        <div  class="col-sm-3"><label>Enter Message</label><span>:</span></div>
+                        <div class="col-sm-8">
+                            <textarea rows="5" placeholder="Enter Your Message" class="form-control input-sm"></textarea>
+                        </div>
+                    </div>
+                    <div style="margin-top:10px;" class="row">
+                        <div style="padding-top:10px;" class="col-sm-3"><label></label></div>
+                        <div class="col-sm-8">
+                            <button class="btn btn-success btn-sm">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+
+                    <div style="margin:50px" class="serv">
+                        <h2 style="margin-top:10px;">Address</h2>
+
+                       Antonya Street, <br>
+                        23/H-2, Building<br>
+                        TA, AUS District<br>
+                        Phone:+91 9159669599<br>
+                        Email:support@smarteyeapps.com<br>
+                        Website:www.smarteyeapps.com.com<br>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 
       <?php include("templates/footer.php") ?>
