@@ -1,14 +1,5 @@
  <!-- ******************** Footer Starts Here ******************* -->  
- <div class="footer-ablove">
-        <div class="container">
-            <div class="row">
-                <p>Looking For Exclusive Services?
-                    <button class="btn btn-default">Donate Now</button>
-                </p>
-            </div>
-        </div>
-    </div>
-    <footer class="container-fluid footer-cont">
+    <footer class="container-fluid footer-cont mt-5" >
         <div class="container">
             <div class="footer-top row">
                 <div class="col-md-4 foot-logo">

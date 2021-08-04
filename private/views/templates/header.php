@@ -17,7 +17,7 @@
 
 <body>
     <!-- ******************** Header Starts Here ******************* -->
-    <header>
+    <header >
         <div class="container-fluid header-top">
             <div class="container">
                 <div class="row">
