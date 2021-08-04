@@ -5,7 +5,8 @@ require("Model.php");
 class User extends Model{
 
     static $tableName = "users";
-    public $fullName;
+    public $firstName;
+    public $lastName;
     public $nic;
     public $gender;
     public $dateOfBirth;
@@ -13,12 +14,14 @@ class User extends Model{
     public $bodyWeight;
     public $address;
     public $email;
+    public $phoneNumber;
     public $password;
 
     function __construct($data){
         // data array (fullName => value,nic => value,genderdateOfBirth => value,bloodGroup => value,bodyWeight => value,address => value,email => value,password => value)
         
-        $this->fullName = $data['fullName'];
+        $this->firstName = $data['fullName'];
+        $this->lastName = $data['fullName'];
         $this->nic = $data['nic'];
         $this->gender = $data['gender'];
         $this->nic = new PrimaryKey($data['nic']);
@@ -27,12 +30,14 @@ class User extends Model{
         $this->bodyWeight = $data['bodyWeight'];
         $this->address = $data['address'];
         $this->email = $data['email'];
+        $this->phoneNumber = $data['phoneNumber'];
         $this->password = $data['password'];
     }
 
     public static function createTable(){
         $sql = "CREATE TABLE " . static::$tableName ." (
-            fullName VARCHAR(30) NOT NULL,
+            firstName VARCHAR(30) NOT NULL,
+            lastName VARCHAR(30) NOT NULL,
             nic VARCHAR(30) PRIMARY KEY NOT NULL,
             gender VARCHAR(30) NOT NULL,
             dateOfBirth DATE NOT NULL,
@@ -40,6 +45,7 @@ class User extends Model{
             bodyWeight INT(20),
             address VARCHAR(30),
             email VARCHAR(50),
+            phoneNumber VARCHAR(50),
             password VARCHAR(200) )";
         
         Connection::execute($sql);
