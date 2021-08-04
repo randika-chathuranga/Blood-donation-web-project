@@ -5,6 +5,4 @@ include("private/Path.php");
 
 Server::execute();
 
-User::createTable();
-
 ?>
