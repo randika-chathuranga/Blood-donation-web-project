@@ -1,17 +1,21 @@
 <?php
 
 require("private/controllers/UserController.php");
+require("private/controllers/Authentication.php");
 
 Route::addPath("/home", function () {
-    UserController::home();
+    $root = realpath($_SERVER["DOCUMENT_ROOT"]);
+    include "$root/private/views/home.php";
 });
 
 Route::addPath("/", function () {
-    UserController::home();
+    $root = realpath($_SERVER["DOCUMENT_ROOT"]);
+    include "$root/private/views/home.php";
 });
 
 Route::addPath("/about", function () {
-    UserController::about();
+    $root = realpath($_SERVER["DOCUMENT_ROOT"]);
+    include "$root/private/views/about.php";
 });
 
 Route::addPath("/contact", function () {
