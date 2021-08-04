@@ -59,8 +59,19 @@
                         <span>
                             <p>Are you a donar?</p>
                         </span>
-                    <span><a href="#">Login</a></span>
-                    <span><a href="#">Password</a></span>
+                        <?php
+                       
+                        if(!isset($_COOKIE["user"]) || $_COOKIE["user"] == null ){
+                            echo "<span><a href='/login'>Login</a></span>";
+                            echo "<span><a href='/register'>Register</a></span>";
+                        }  
+                        else{
+                            echo "<span> <a href='/profile'>". unserialize($_COOKIE["user"])->fullName ." </a></span>";
+                            echo "<span><a href='/logout'>LogOut</a></span>";
+                        }
+                            
+                    ?>
+
                 </li>
             </ul>
         </div>

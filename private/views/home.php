@@ -1,16 +1,4 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
-    <title>Give Blood</title>
-  </head>
-  <body>
+<?php include("templates/header.php") ?>
 
     <div class="card mb-3" style="max-width:100; min-height: 800px; background-color:#f72d48;">
         <div class="row g-0 " style="min-height:800px;">
@@ -29,7 +17,7 @@
         </div>
       </div>
 
-
+      <?php include("templates/footer.php") ?>
 
 
 
