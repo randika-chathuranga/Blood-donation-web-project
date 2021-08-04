@@ -1,31 +1,55 @@
-<?php include("templates/header.php");
+<?php 
 session_start();
+include("templates/header.php");
 ?>
 
-<div class="container" id="login-form">
-		<form method="POST" action="login/user">
-		    <div class="mb-3 row">
-    			<label for="staticEmail" class="col-sm-2 col-form-label"><b>Email</b></label>
-    			<div class="col-sm-10">
-      			<input type="email" class="form-control" id="email" <?php echo isset($_SESSION["email"]) ? "value = ".$_SESSION["email"] : " placeholder = 'jon@gmail.com'" ?> name="email">
-    			</div>
-  			</div>
-  			<div class="mb-3 row">
-    			<label for="inputPassword" class="col-sm-2 col-form-label"><b>Password</b></label>
-    			<div class="col-sm-10">
-      			<input type="password" class="form-control" id="password" name="password">
-    			</div>
-  			</div>
-		  	<center><button type="submit" class="btn btn-secondary" id="login-button"><i class="fas fa-sign-in-alt"></i>Login Here</button></center>
-
-			  <?php 
+	<div class="container mt-5">
+      <div class="col-md-6 mx-auto text-center">
+         <div class="header-title">
+            <h2 class="wv-heading--title">
+               Check out — it’s free!
+            </h2>
+            <h4 class="wv-heading--subtitle">
+               Lorem ipsum dolor sit amet! Neque porro quisquam est qui do dolor amet, adipisci velit...
+            </h4>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-4 mx-auto">
+            <div class="myform form ">
+               <form method="POST" action="login/user" name="login">
+                  <div class="form-group">
+                     <input type="email" name="email"  class="form-control my-input" id="email" <?php echo isset($_SESSION["email"]) ? "value = ".$_SESSION["email"] : " placeholder = 'jon@gmail.com'" ?>>
+                  </div>
+                  <div class="form-group">
+                     <input type="number" min="0" name="password" id="password"  class="form-control my-input" placeholder="password">
+                  </div>
+                  <div class="text-center ">
+                     <button type="submit" class=" btn btn-block send-button tx-tfm">Login</button>
+                  </div>
+                  <div class="col-md-12 ">
+                     <div class="login-or">
+                        <hr class="hr-or">
+                        <span class="span-or">or</span>
+                     </div>
+                  </div>
+                  <div class="form-group">
+                     <a class="btn btn-block g-button" href="#">
+                     <i class="fa fa-google"></i> Register
+                     </a>
+                  </div>
+               </form>
+			   <?php 
 			  
 			 	if(isset($_SESSION["login_error"])){
-					 echo "<h6> ".$_SESSION["login_error"]." </h6>";
+					 echo "<h5 class='text-center text-danger'> ".$_SESSION["login_error"]." </h5>";
+					 unset($_SESSION["login_error"]);
 				 }
-				unset($_SESSION["login_error"]);
+				
 			  ?>
-		</form>
-	</div>
+            </div>
+         </div>
+      </div>
+   </div>
 
     <?php include("templates/footer.php") ?>
