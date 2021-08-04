@@ -17,7 +17,7 @@ class Authentication
         }
         else{
             if($user[0]->password == $_REQUEST["password"]){
-
+                
                 setcookie("user", serialize($user[0]), time() + (3600 * 24), "/");
                 header("Location: http://localhost/home");
                 exit;
