@@ -70,7 +70,7 @@
                                 <a class="nav-link " href="#events"  >Events</a>
                               </li>
                                <li class="nav-item">
-                                <a class="nav-link " href="donors.php" >Donors</a>
+                                <a class="nav-link " href="donors" >Donors</a>
                               </li>
                                <li class="nav-item">
                                 <a class="nav-link " href="contact_us.html" >Contact US</a>
