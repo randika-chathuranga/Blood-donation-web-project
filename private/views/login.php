@@ -1,5 +1,6 @@
-<?php include("templates/header.php");
+<?php 
 session_start();
+include("templates/header.php");
 ?>
 
 <div class="container" id="login-form">
@@ -22,8 +23,9 @@ session_start();
 			  
 			 	if(isset($_SESSION["login_error"])){
 					 echo "<h6> ".$_SESSION["login_error"]." </h6>";
+					 unset($_SESSION["login_error"]);
 				 }
-				unset($_SESSION["login_error"]);
+				
 			  ?>
 		</form>
 	</div>
