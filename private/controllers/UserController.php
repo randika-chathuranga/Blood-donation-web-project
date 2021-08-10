@@ -20,6 +20,7 @@ class UserController
         foreach ($userList as $user) {
              $user->nic = null;
              $user->password = null;
+             $user->lastName = null;
         }
         return $userList;
     }

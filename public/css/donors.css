@@ -1,7 +1,5 @@
 .table-container {
-    width: 90vw;
-    overflow-y: scroll;
-    height: 50vh;
+    width: 700px;
 }
 
 .image_container {
@@ -14,20 +12,19 @@
 
 .image_container .content {
     position: absolute;
-    /* Position the background text */
     bottom: 0;
-    /* At the bottom. Use top:0 to append it to the top */
     background: rgb(0, 0, 0);
-    /* Fallback color */
     background: rgba(0, 0, 0, 0.5);
-    /* Black background with 0.5 opacity */
     color: #f1f1f1;
-    /* Grey text */
     width: 100%;
-    /* Full width */
     padding: 20px;
 }
 
 h1 {
     color: #f1f1f1;
+}
+
+.hint{
+  font-size: medium;  
+  color: #d10000c4;
 }
