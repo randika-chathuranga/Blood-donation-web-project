@@ -21,7 +21,7 @@ class Connection{
         $result = $connection->query($sql);
 
         if ( $result == TRUE or $result != null) {
-            echo '<script>console.log("sql statment executed sucessfully")</script>';
+            //echo '<script>console.log("sql statment executed sucessfully")</script>';
         } else {
             echo "Error: " . $sql . "<br>" . $connection->error;
         }

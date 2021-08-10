@@ -43,7 +43,7 @@ class User extends Model{
             dateOfBirth DATE NOT NULL,
             bloodGroup VARCHAR(20),
             bodyWeight INT(20),
-            address VARCHAR(30),
+            address VARCHAR(150),
             email VARCHAR(50),
             phoneNumber VARCHAR(50),
             password VARCHAR(200) )";
