@@ -1,6 +1,6 @@
 <?php
 session_start();
-$styles = array("donors.css");
+$styles = array("donors.css","//cdn.jsdelivr.net/npm/@sweetalert2/theme-borderless/borderless.css");
 include("templates/header.php");
 ?>
 
@@ -14,35 +14,11 @@ include("templates/header.php");
 <br><br><br>
 <div class="d-flex justify-content-center">
     <div class="table-container" id="table-container">
-        <!-- <table class="table table-hover table-striped ">
-            <thead class="thead-light">
-                <tr>
-                    <th scope="col">First Name</th>
-                    <th scope="col">Last Name</th>
-                    <th scope="col">Gender</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Phone Number</th>
-                    <th scope="col">Blood Group</th>
-
-                </tr>
-            </thead>
-            <tbody>
-                <?php
-                // $userList = User::getDonorList();
-                // foreach ($userList as $user) {
-                //     echo '<tr onclick="myFunction();">' .
-                //         '<td>' . $user->firstName . '</td>' .
-                //         '<td>' . $user->lastName . '</td>' .
-                //         '<td>' . $user->gender . '</td>' .
-                //         '<td>' . $user->email . '</td>' .
-                //         '<td>' . $user->phoneNumber . '</td>' .
-                //         '<td>' . $user->bloodGroup . '</td>' .
-                //         '</tr>';
-                // }
-                ?>
-            </tbody>
-        </table> -->
+        <!-- The table is been built in front end -->
     </div>
+</div>
+<div class="hint-container">
+  <p class="text-center hint">(Please click on a donor to see more details)</p> 
 </div>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="public/js/donors.js"></script>
