@@ -13,8 +13,8 @@ include("templates/header.php");
 </div>
 <br><br><br>
 <div class="d-flex justify-content-center">
-    <div class="table-container">
-        <table class="table table-hover table-striped ">
+    <div class="table-container" id="table-container">
+        <!-- <table class="table table-hover table-striped ">
             <thead class="thead-light">
                 <tr>
                     <th scope="col">First Name</th>
@@ -28,22 +28,22 @@ include("templates/header.php");
             </thead>
             <tbody>
                 <?php
-                $userList = User::getDonorList();
-
-                foreach ($userList as $user) {
-                    echo '<tr>' .
-                        '<td>' . $user->firstName . '</td>' .
-                        '<td>' . $user->lastName . '</td>' .
-                        '<td>' . $user->gender . '</td>' .
-                        '<td>' . $user->email . '</td>' .
-                        '<td>' . $user->phoneNumber . '</td>' .
-                        '<td>' . $user->bloodGroup . '</td>' .
-                        '</tr>';
-                }
+                // $userList = User::getDonorList();
+                // foreach ($userList as $user) {
+                //     echo '<tr onclick="myFunction();">' .
+                //         '<td>' . $user->firstName . '</td>' .
+                //         '<td>' . $user->lastName . '</td>' .
+                //         '<td>' . $user->gender . '</td>' .
+                //         '<td>' . $user->email . '</td>' .
+                //         '<td>' . $user->phoneNumber . '</td>' .
+                //         '<td>' . $user->bloodGroup . '</td>' .
+                //         '</tr>';
+                // }
                 ?>
-
             </tbody>
-        </table>
+        </table> -->
     </div>
 </div>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="public/js/donors.js"></script>
 <?php include("templates/footer.php") ?>
