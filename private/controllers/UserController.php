@@ -15,4 +15,19 @@ class UserController
         $root = realpath($_SERVER["DOCUMENT_ROOT"]);
         include "$root/private/views/about_us.html";
     }
+    
+    public static function clearDonorsForJson($userList){
+        foreach ($userList as $user) {
+             $user->nic = null;
+             $user->password = null;
+             $user->lastName = null;
+        }
+        return $userList;
+    }
+
+    public static function getDonors(){
+        echo json_encode(self::clearDonorsForJson(User::getDonorList()));
+    }
+
+    
 }

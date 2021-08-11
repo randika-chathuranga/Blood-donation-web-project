@@ -43,6 +43,10 @@ Route::addPath("/donors", function () {
     include "$root/private/views/donors.php";
 });
 
+Route::addPath("/donors.json", function () {
+    UserController::getDonors();
+});
+
 // post requests
 
 Route::addPath("/login/user", function () {

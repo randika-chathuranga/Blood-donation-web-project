@@ -20,8 +20,8 @@ class User extends Model{
     function __construct($data){
         // data array (fullName => value,nic => value,genderdateOfBirth => value,bloodGroup => value,bodyWeight => value,address => value,email => value,password => value)
         
-        $this->firstName = $data['fullName'];
-        $this->lastName = $data['fullName'];
+        $this->firstName = $data['firstName'];
+        $this->lastName = $data['lastName'];
         $this->nic = $data['nic'];
         $this->gender = $data['gender'];
         $this->nic = new PrimaryKey($data['nic']);
@@ -43,7 +43,7 @@ class User extends Model{
             dateOfBirth DATE NOT NULL,
             bloodGroup VARCHAR(20),
             bodyWeight INT(20),
-            address VARCHAR(30),
+            address VARCHAR(150),
             email VARCHAR(50),
             phoneNumber VARCHAR(50),
             password VARCHAR(200) )";

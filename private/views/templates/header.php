@@ -13,6 +13,22 @@
     <link rel="stylesheet" href="public/plugins/slider/css/owl.carousel.min.css">
     <link rel="stylesheet" href="public/plugins/slider/css/owl.theme.default.css">
     <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+    <?php
+    if (!isset($styles)) {
+        $styles = array();
+    }
+    foreach ($styles as $style) {
+        echo "<link href=\"public/css/" . $style . "\" rel=\"stylesheet\" type=\"text/css\">\n";
+    }
+    ?>
+    <?php
+    if (!isset($scripts)) {
+        $scripts = array();
+    }
+    foreach ($scripts as $script) {
+        echo "<script src=\"public/js/" . $script . "\" ></script> \n";
+    }
+    ?>
 </head>
 
 <body>
@@ -70,7 +86,7 @@
                                 <a class="nav-link " href="#events"  >Events</a>
                               </li>
                                <li class="nav-item">
-                                <a class="nav-link " href="donors.php" >Donors</a>
+                                <a class="nav-link " href="donors" >Donors</a>
                               </li>
                                <li class="nav-item">
                                 <a class="nav-link " href="contact_us.html" >Contact US</a>

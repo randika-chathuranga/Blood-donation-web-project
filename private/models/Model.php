@@ -108,6 +108,44 @@ class Model{
         }
     }
 
+    static function getDonorList(){
+
+        // SELECT * FROM table_name
+        $sql = "SELECT * FROM " . static::$tableName;
+        
+        $result = Connection::execute($sql);
+
+        if ($result->num_rows > 0) {
+
+            $objects = array();
+
+            while($row = $result->fetch_assoc()) {
+
+                $values = array();
+
+                $reflectionClass = new ReflectionClass(static::class); // reflection class stores meta data of a given class
+                $properties = $reflectionClass->getProperties();
+
+                foreach ($properties as $value){
+
+                    if($value->getName() != "tableName"){
+                    $values[$value->getName()] = $row[$value->getName()];
+                    }
+    
+                }
+
+                $obj = $reflectionClass->newInstance($values);
+                array_push($objects, $obj);
+            }
+
+            return $objects;
+
+        }else{
+            // echo "0 results";
+            return null;
+        }
+    }
+
     function update(){
         // update sql record's all the columns with the new property values of the child class
         // create the update sql statement and execute from connection class

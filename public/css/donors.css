@@ -1,0 +1,30 @@
+.table-container {
+    width: 700px;
+}
+
+.image_container {
+    position: relative;
+}
+
+.image_container img {
+    filter: brightness(50%) blur(1px);
+}
+
+.image_container .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+h1 {
+    color: #f1f1f1;
+}
+
+.hint{
+  font-size: medium;  
+  color: #d10000c4;
+}
