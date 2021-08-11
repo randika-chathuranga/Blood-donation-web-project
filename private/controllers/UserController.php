@@ -14,19 +14,46 @@ class UserController
 
         $user = new User($data);
         $_SESSION["data"] = $data;
+        
+        $error = false;
+        if($data["password"] == null){
 
-        if(User::fetch('email',$data['email']) != null){
+            $_SESSION["register_passwordError"] = "Password cannot be empty";
+            header("Location: /register");
+            $error = true;
+        }if($data["password"] != $data["confirmPassword"]){
 
-            $_SESSION["register_error"] = "you already have an account with this email";
-            header("Location: http://localhost/register");
-            exit;
+            $_SESSION["register_passwordError"] = "Confirm Password didnt match";
+            header("Location: /register");
+            $error = true;
+        }if($data["firstName"] == null){
 
-        }elseif(User::fetch('nic',$data['nic']) != null){
+            $_SESSION["register_firstNameError"] = "First Name cannot be empty";
+            header("Location: /register");
+            $error = true;
+        }if(User::fetch('email',$data['email']) != null){
 
-            $_SESSION["register_error"] = "you already have an account with this NIC";
-            header("Location: http://localhost/register");
-            exit;
-        }else{
+            $_SESSION["register_emailError"] = "you already have an account with this email";
+            header("Location: /register");
+            $error = true;
+        }if($data['email'] == null){
+
+            $_SESSION["register_emailError"] = "Email cannot be empty";
+            header("Location: /register");
+            $error = true;
+        }if($data['nic'] == null){
+
+            $_SESSION["register_nicError"] = "NIC cannot be empty";
+            header("Location: /register");
+            $error = true;
+        }if(User::fetch('nic',$data['nic']) != null){
+
+            $_SESSION["register_nicError"] = "you already have an account with this NIC";
+            header("Location: /register");
+            $error = true;
+        }
+        
+        if(!$error){
             unset($_SESSION["data"]);
             $user->save();
             Authentication::login();
