@@ -12,10 +12,9 @@ class UserController
             $data[$key] = $value;
         }
 
-        $user = new User($data);
         $_SESSION["data"] = $data;
-        
         $error = false;
+
         if($data["password"] == null){
 
             $_SESSION["register_passwordError"] = "Password cannot be empty";
@@ -52,13 +51,16 @@ class UserController
             header("Location: /register");
             $error = true;
         }
-        
+    
         if(!$error){
+
             unset($_SESSION["data"]);
+
+            $data["password"] = password_hash($data["password"], PASSWORD_DEFAULT);
+            $user = new User($data);
             $user->save();
             Authentication::login();
-        }
-        
+        }     
     }
 
     public static function home(){

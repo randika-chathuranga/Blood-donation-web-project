@@ -22,7 +22,7 @@ include("templates/header.php");
                      <input type="email" name="email"  class="form-control my-input" id="email" <?php echo isset($_SESSION["email"]) ? "value = ".$_SESSION["email"] : " placeholder = 'jon@gmail.com'" ?>>
                   </div>
                   <div class="form-group">
-                     <input type="number" min="0" name="password" id="password"  class="form-control my-input" placeholder="password">
+                     <input type="password" name="password" id="password"  class="form-control my-input" placeholder="password">
                   </div>
                   <div class="text-center ">
                      <button type="submit" class=" btn btn-block send-button tx-tfm">Login</button>
