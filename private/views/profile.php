@@ -6,7 +6,7 @@ include("templates/header.php");
 <div class="page-content page-container" id="page-content">
     <div class="padding">
         <div class="row container d-flex justify-content-center">
-            <div class="col-xl-6 col-md-12">
+            <div class="col-xl-12 col-md-12">
                 <div class="card user-card-full">
                     <div class="row m-l-0 m-r-0">
                         <div class="col-sm-4 bg-c-lite-green user-profile">
@@ -75,7 +75,7 @@ include("templates/header.php");
             </div>
         </div>
         <div class="d-flex justify-content-center edit">
-            <button type="button" class="btn btn-info" onclick="window.location.href='/profile/edit';">Edit</button>
+            <button type="button" class="btn btn-info" onclick="window.location.href='/edit';">Edit</button>
         </div>
     </div>
 </div>

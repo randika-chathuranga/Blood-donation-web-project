@@ -4,6 +4,41 @@ require("UnitTests.php");
 
 class UserController
 {
+    public static function update(){
+        session_start();
+        $data = array();
+
+        foreach ($_POST as $key => $value) {
+            $data[$key] = $value;
+        }
+
+        $user = unserialize($_COOKIE["user"]);
+        $_SESSION["data"] = $data;
+        
+        $error = false;
+        if($data["firstName"] == null){
+
+            $_SESSION["register_firstNameError"] = "First Name cannot be empty";
+            header("Location: /register");
+            $error = true;
+        }
+        
+        if(!$error){
+            unset($_SESSION["data"]);
+            $user->firstName = $data["firstName"];
+            $user->lastName = $data["lastName"];
+            $user->phoneNumber = $data["phoneNumber"];
+            $user->gender = $data["gender"];
+            $user->address = $data["address"];
+            $user->dateOfBirth = $data["dateOfBirth"];
+            $user->bodyWeight = $data["bodyWeight"];
+            $user->bloodGroup = $data["bloodGroup"];
+            $user->update();
+            header("Location: /profile");
+            exit;
+        }
+        
+    }
     public static function create(){
         session_start();
         $data = array();
