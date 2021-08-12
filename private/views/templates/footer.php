@@ -73,7 +73,7 @@
 
      <div class="copy">
         <div class="container">
-            <a href="https://www.smarteyeapps.com/">2015 &copy; All Rights Reserved | Designed and Developed by Smarteyeapps</a>
+            <a href="#">2015 &copy; All Rights Reserved | Designed and Developed by Smarteyeapps</a>
 
             <span>
                 <a><i class="fab fa-github"></i></a>
@@ -87,10 +87,6 @@
     </div>
 
 </body>
-
-    <script src="public/js/jquery-3.2.1.min.js"></script>
-    <script src="public/js/popper.min.js"></script>
-    <script src="public/js/bootstrap.min.js"></script>
     <script src="public/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
     <script src="public/plugins/slider/js/owl.carousel.min.js"></script>
     <script src="public/js/script.js"></script>

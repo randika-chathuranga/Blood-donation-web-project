@@ -304,9 +304,9 @@
 
     <!--  ************************* Contact Us Starts Here ************************** -->
 
-    <div class="container" style="margin-top:50px;">
+    <div class="container" style="margin-top:50px;" id="contact">
             <div class="session-title row">
-            <h2>Contact US</h2>
+            <h2>Contact Us</h2>
         </div>
 </div>
     <div style="margin-top:50px;" class="row no-margin">
