@@ -12,19 +12,19 @@ class Authentication
         if($user == null){
 
             $_SESSION["login_error"] = "user not found";
-            header("Location: http://localhost/login");
+            header("Location: /login");
             exit;
         }
         else{
             if( password_verify($_REQUEST["password"],$user[0]->password)){
                 
                 setcookie("user", serialize($user[0]), time() + (3600 * 24), "/");
-                header("Location: http://localhost/home");
+                header("Location: /profile");
                 exit;
             }
             else{
                 $_SESSION["login_error"] = "Wrong password";
-                header("Location: http://localhost/login");
+                header("Location: /login");
                 exit;
             }       
         }
@@ -35,7 +35,7 @@ class Authentication
         unset($_SESSION["email"]);
         setcookie("user", null ,1);
 
-        header("Location: http://localhost/home");
+        header("Location: /home");
         exit;
     }
 }
