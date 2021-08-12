@@ -1,6 +1,5 @@
 <?php include("templates/header.php") ?>
 
-
      <!-- ******************** Slider Starts Here ******************* -->
      <div class="slider">
         <!-- Set up your HTML -->
@@ -64,8 +63,8 @@
             <div class="about-row row">
                 <div class="col-md-8">
                     <div class="abut-detail">
-                         <h4>BLOOD DONATION CAMPINGS IN SRI LANKA.</h4>
-                        <p>Integer vulputate vehicula dolor a eleifend. Duis aliquam condimentum sapien, eget tempor justo. Aenean porttitor nibh metus, sollicitudin egestas metus posuere et . Fusce egestas volutpat metus, in sodales sem bibendum porta. Nunc hendrerit nunc sit </p> <p> Amet tellus posuere, at malesuada sem gravida. Integer maximus ultricies augue, at dapibus elit bibendum consequat. Cras faucibus tellus eleifend, fermentum purus in, dapibus sapien. Praesent nec ornare risus. Etiam iaculis, ligula vel gravida vestibulum, urna justo posuere ante, id pretium massa arcu sed mi. Nunc a sollicitudin sem. Duis tempus</p>
+                         <h4>BLOOD DONATION CAMPINGS.</h4>
+                        <p>Blood donation is a vital part of worldwide healthcare. It relates to blood transfusion as a life-sustaining and life-saving procedure as well as a form of therapeutic phlebotomy as a primary medical intervention. Over one hundred million units of blood are donated each year throughout the world.</p>
                     </div>
                    
 
@@ -73,22 +72,22 @@
                         <div class="about-diag">
                             <div class="icon"><i class="fas fa-arrow-right"></i></div>
                             <div class="tex">
-                                <h5>$500</h5>
-                                <p>Raised by your help</p>
+                                <h5>5000</h5>
+                                <p>Lives saved by your help</p>
                             </div>
                         </div>
                         <div class="about-diag">
                             <div class="icon"><i class="fas fa-arrow-right"></i></div>
                             <div class="tex">
-                                <h5>$1000</h5>
+                                <h5>1000</h5>
                                 <p>Immediate Need</p>
                             </div>
                         </div>
                         <div class="about-diag">
                             <div class="icon"><i class="fas fa-arrow-right"></i></div>
                             <div class="tex">
-                                <h5>$5000</h5>
-                                <p>Our initial target</p>
+                                <h5>50000</h5>
+                                <p>Total need</p>
                             </div>
                         </div>
                     </div>
@@ -106,7 +105,7 @@
      <section class="container-fluid causes" id="process">
         <div class="container">
             <div class="session-title row">
-            <p>Join with our journey become a donor</p>
+            <p>Join with us to become a donor</p>
             <h2>Donation Process</h2>
         </div>
         <div class="cuses-row row">
@@ -120,27 +119,8 @@
                 <div class="caus-info row no-margin">
                 </div>
                 <div class="caus-detail">
-                    <h4>1 - Registration</h4>
-                    <p>he point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                </div>
-
-                </div>
-            
-
-            </div>
-
-            <div class="col-md-3">
-                <div class="causen-ccover">
-                    
-                
-                <div class="caus-img">
-                    <img src="public/images/causes/c1.jpg" alt="">
-                </div>
-                <div class="caus-info row no-margin">
-                </div>
-                <div class="caus-detail">
-                    <h4>2 - Seeing</h4>
-                    <p>he point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                    <h4>1 - Register</h4>
+                    <p> Register via our platform</p>
                 </div>
 
                 </div>
@@ -158,11 +138,12 @@
                 <div class="caus-info row no-margin">
                 </div>
                 <div class="caus-detail">
-                    <h4>3 - Donation</h4>
-                    <p>he point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                    <h4>2 - Visit</h4>
+                    <p>Visit an event or blood bank</p>
                 </div>
 
-            </div>
+                </div>
+            
 
             </div>
 
@@ -176,8 +157,26 @@
                 <div class="caus-info row no-margin">
                 </div>
                 <div class="caus-detail">
-                    <h4>4 - Save Life</h4>
-                    <p>he point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+                    <h4>3 - Donate</h4>
+                    <p> Donate blood </p>
+                </div>
+
+            </div>
+
+            </div>
+
+            <div class="col-md-3">
+                <div class="causen-ccover">
+                    
+                
+                <div class="caus-img">
+                    <img src="public/images/causes/c4.jpg" alt="">
+                </div>
+                <div class="caus-info row no-margin">
+                </div>
+                <div class="caus-detail">
+                    <h4>4 - Save Lives</h4>
+                    <p> Your blood can save a life </p>
                 </div>
 
             </div>
@@ -190,7 +189,7 @@
 
     <!-- ******************** Upcomming Events Starts Here ******************* --> 
 
-    <section class="upcomming container-flid" id="events">
+    <section class="upcomming container-fluid" id="events">
         <div class="container">
             <div class="session-title row">
                 <p>KNOW AND COME TO JOIN OUR</p>
@@ -201,19 +200,18 @@
                     <div class="event-card">
                         <img src="public/images/event/e1.jpg" alt="">
                         <div class="event-detail">
-                            <h4>Fund Raising Event</h4>
-                            <p>Estibulum at maximus neque. Etiam interdum fermentum dolor, eget placerat lorem.</p>
-
-                            <h6>25 <sup>Th</sup> Mar 2020</h6>
+                            <h4>IEEE Blood Donation Campaign</h4>
+                            <p>GIVE BLOOD HEALTHIER PLACE</p>
+                            <h6>9 <sup>Th</sup> JAN 2020</h6>
                         </div>
                         <div class="plac-dat row no-margin">
                             <div class="col-7 colplac colplacll">
                                 <strong>PLACE:</strong>
-                                <p>EASTER COAST HOTEL, CA</p>
+                                <p>PILIYANDALA, COLOMBO</p>
                             </div>
                             <div class="col-5 colplac">
-                                 <strong>TICKET:</strong>
-                                <p>FREE OF COST</p>
+                                 <strong>TIME:</strong>
+                                <p>8AM - 5PM</p>
                             </div>
                         </div>
                     </div>
@@ -222,18 +220,18 @@
                     <div class="event-card">
                         <img src="public/images/event/e2.jpg" alt="">
                         <div class="event-detail">
-                            <h4>Fund Raising Event</h4>
-                            <p>Estibulum at maximus neque. Etiam interdum fermentum dolor, eget placerat lorem.</p>
+                            <h4>SUSL Blood Donation Campaing</h4>
+                            <p>15 MINIUTES CAN SAVE 3 LIVES</p>
 
-                            <h6>25 <sup>Th</sup> Mar 2020</h6>
+                            <h6>21 <sup>Th</sup> FEB 2020</h6>
                         </div>
                         <div class="plac-dat row no-margin">
                             <div class="col-7 colplac colplacll">
                                 <strong>PLACE:</strong>
-                                <p>EASTER COAST HOTEL, CA</p>
+                                <p>GAMPOLA, KANDY</p>
                             </div>
                             <div class="col-5 colplac">
-                                 <strong>TICKET:</strong>
+                                 <strong>TIME:</strong>
                                 <p>FREE OF COST</p>
                             </div>
                         </div>
@@ -243,18 +241,18 @@
                     <div class="event-card">
                         <img src="public/images/event/e3.jpg" alt="">
                         <div class="event-detail">
-                            <h4>Fund Raising Event</h4>
-                            <p>Estibulum at maximus neque. Etiam interdum fermentum dolor, eget placerat lorem.</p>
+                            <h4>AISEC Save a Life Campaing</h4>
+                            <p>WORLD BLOOD DONOR DAY</p>
 
-                            <h6>25 <sup>Th</sup> Mar 2020</h6>
+                            <h6>17 <sup>Th</sup> SEP 2021</h6>
                         </div>
                         <div class="plac-dat row no-margin">
                             <div class="col-7 colplac colplacll">
                                 <strong>PLACE:</strong>
-                                <p>EASTER COAST HOTEL, CA</p>
+                                <p>MAHARAGAMA, COLOMBO</p>
                             </div>
                             <div class="col-5 colplac">
-                                 <strong>TICKET:</strong>
+                                 <strong>TIME:</strong>
                                 <p>FREE OF COST</p>
                             </div>
                         </div>
@@ -273,45 +271,29 @@
                 <img src="public/images/count.jpg" alt="">
             </div>
             <div class="col-lg-6 text-part">
-                <h3>DIFFERENCE WE ARE MAKING</h3>
-                <p>Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
-                <div class="row count">
-                    <div class="col-md-4">
-                        <div class="count-sing">
-                             <i class="fas fa-donate"></i>
-                            <h2>$8765</h2>
-                            <b>People Contribution</b>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="count-sing">
-                             <i class="fas fa-users"></i>
-                            <h2>$8765</h2>
-                            <b>Volunteer Reached</b>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="count-sing">
-                            <i class="fas fa-trophy"></i>
-                            <h2>$8765</h2>
-                            <b>Successful Project</b>
-                        </div>
-                    </div>
-                </div>
+                <h3>DONOR SELECTION CRTERIA</h3>
+                <p> <br>Age above 18 years and below 60 years.
+                <br><br>If previously donated, at least 4 months should be elapsed since the date of previous donation.
+                <br><br>Hemoglobin level should be more than 12g/dL. (this blood test is done prior to each blood donation)
+                <br><br>Free from any serious disease condition or pregnancy.
+                <br><br>Should have a valid identity card or any other document to prove the identity.
+                <br><br>Free from "Risk Behaviours".</p>
+                
             </div>
         </div>
     </div>   
 
     <!--  ************************* Contact Us Starts Here ************************** -->
 
-    <div class="container" style="margin-top:50px;" id="contact">
+    <div class="container" style="margin-top:10px;" id="contact">
             <div class="session-title row">
+            <p>FEEL FREE TO CONTACT US</p>
             <h2>Contact Us</h2>
         </div>
 </div>
-    <div style="margin-top:50px;" class="row no-margin">
+    <div style="margin-top:10px;" class="row no-margin">
 
-        <iframe style="width:100%" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d249759.19784092825!2d79.10145254589841!3d12.009924873581818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1448883859107"  height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe style="width:100%" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63371.815297074514!2d79.82118589335941!3d6.921837369631892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae253d10f7a7003%3A0x320b2e4d32d3838d!2sColombo!5e0!3m2!1sen!2slk!4v1628768663558!5m2!1sen!2slk" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 
     </div>
@@ -353,12 +335,11 @@
                     <div style="margin:50px" class="serv">
                         <h2 style="margin-top:10px;">Address</h2>
 
-                       Antonya Street, <br>
-                        23/H-2, Building<br>
-                        TA, AUS District<br>
-                        Phone:+91 9159669599<br>
-                        Email:support@smarteyeapps.com<br>
-                        Website:www.smarteyeapps.com.com<br>
+                        23/H, Nexus Building<br>
+                        Colombo, Sri Lanka<br>
+                        Phone:+94 123 4567<br>
+                        Email: support@lifeSavers.com<br>
+                        Website: www.lifesavers.com<br>
                     </div>
 
 
@@ -369,4 +350,4 @@
 
     </div>
 
-      <?php include("templates/footer.php") ?>
+<?php include("templates/footer.php") ?>

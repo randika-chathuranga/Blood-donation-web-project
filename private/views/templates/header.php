@@ -4,18 +4,33 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title>Life Savers | Blood Donation</title>
-    <link rel="shortcut icon" href="public/images/fav.png" type="image/x-icon">
+
+    <!-- FONTS  -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700,900" rel="stylesheet">
-    <link rel="shortcut icon" href="public/images/fav.jpg">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- BOOTSTRAP 4.6.0  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     
+    <!-- FONTAWSOME 5.12.0  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha512-c93ifPoTvMdEJH/rKIcBx//AL1znq9+4/RmMGafI/vnTFe/dKwnn1uoeszE2zJBQTS1Ck5CqSBE+34ng2PthJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- OWL CAROUSEL 2.2.1 -->
     <link rel="stylesheet" href="public/plugins/slider/css/owl.carousel.min.css">
     <link rel="stylesheet" href="public/plugins/slider/css/owl.theme.default.css">
+    <script src="public/plugins/slider/js/owl.carousel.min.js"></script>
+
+    <!-- SCROLLTOFIXED -->
+    <script src="public/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+
+    <!-- GLOBAL CUSTOM -->
     <link rel="stylesheet" type="text/css" href="public/css/style.css" />
+    <script src="public/js/script.js"></script>
+
+    <!-- PHP SCRIPT TO LOAD CSS AND JS FOR SPECIFIC SECTION  -->
     <?php
     if (!isset($styles)) {
         $styles = array();
@@ -32,6 +47,7 @@
         echo "<script src=\"public/js/" . $script . "\" ></script> \n";
     }
     ?>
+
 </head>
 
 <body>

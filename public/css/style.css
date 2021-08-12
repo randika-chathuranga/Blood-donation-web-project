@@ -455,6 +455,7 @@ header .headwe-nav {
 
 /* =================== Causes Style Starts Here =================== */
 .causes {
+  background-color: #FFF;
   padding: 50px; }
   @media screen and (max-width: 940px) {
     .causes {
@@ -467,7 +468,7 @@ header .headwe-nav {
   .causes .cuses-row .caus-img {
     text-align: center; }
     .causes .cuses-row .caus-img img {
-      width: 120px;
+      width: 180px;
       border-radius: 50%;
       border: 5px solid #ff5722;
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -500,7 +501,6 @@ header .headwe-nav {
 
 /* =================== Upcomming Style Starts Here =================== */
 .upcomming {
-  background-color: #FFF;
   padding: 50px; }
   @media screen and (max-width: 940px) {
     .upcomming {
@@ -529,6 +529,7 @@ header .headwe-nav {
 
 /* =================== We are Making Style Starts Here =================== */
 .we-are-making .text-part {
+  background-color: #FFF;
   padding: 60px;
   padding-left: 20px; }
   .we-are-making .text-part h3 {
@@ -677,4 +678,3 @@ header .headwe-nav {
     padding: 10px;
     border-right: 0px; } }
 
-/*# sourceMappingURL=style.css.map */
