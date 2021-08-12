@@ -19,7 +19,7 @@ class UserController
         if($data["firstName"] == null){
 
             $_SESSION["register_firstNameError"] = "First Name cannot be empty";
-            header("Location: /register");
+            header("Location: /edit");
             $error = true;
         }
         
