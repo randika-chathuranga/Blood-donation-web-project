@@ -34,6 +34,8 @@ class UserController
             $user->bodyWeight = $data["bodyWeight"];
             $user->bloodGroup = $data["bloodGroup"];
             $user->update();
+            setcookie("user", null ,1);
+            setcookie("user", serialize($user), time() + (3600 * 24), "/");
             header("Location: /profile");
             exit;
         }
