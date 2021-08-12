@@ -42,11 +42,11 @@ $user = unserialize($_COOKIE["user"]);
                             <label for="">Gender <span style="color:red;">*</span></label>
                             <div class="maxl">
                                 <label class="radio inline">
-                                    <input type="radio" name="gender" value="male" name="gender" id="gender" <?php if($user->gender == 'Male') echo "checked"?>>
+                                    <input type="radio" name="gender" value="male" name="gender" id="gender" <?php if (strcasecmp($user->gender, "male") == 0) echo "checked"?>>
                                     <span> Male </span>
                                 </label>
                                 <label class="radio inline">
-                                    <input type="radio" name="gender" value="female" name="gender" id="gender" <?php if($user->gender == 'Female') echo "checked"?>>
+                                    <input type="radio" name="gender" value="female" name="gender" id="gender" <?php if (strcasecmp($user->gender, "female") == 0) echo "checked"?>>
                                     <span>Female </span>
                                 </label>
                             </div>
