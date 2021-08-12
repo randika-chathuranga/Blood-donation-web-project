@@ -49,7 +49,7 @@
                        
                             }else{
                         
-                                echo "<li><a href='/profile'><div class='voltterr-btn'> <p>Welcome</p> <strong>". unserialize($_COOKIE["user"])->fullName ."</strong> </div></a></li>";
+                                echo "<li><a href='/profile'><div class='voltterr-btn'> <p>Welcome</p> <strong>". unserialize($_COOKIE["user"])->firstName ."</strong> </div></a></li>";
                                 echo "<li><a href='/logout'><div class='donta-btn pt-2 pb-3'><strong>Logout</strong> </div></a></li>";
                             }
                         ?>
