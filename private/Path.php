@@ -43,6 +43,11 @@ Route::addPath("/edit", function () {
     include "$root/private/views/edit.php";
 });
 
+Route::addPath("/delete", function () {
+    $root = realpath($_SERVER["DOCUMENT_ROOT"]);
+    include "$root/private/views/delete.php";
+});
+
 Route::addPath("/donors", function () {
     $root = realpath($_SERVER["DOCUMENT_ROOT"]);
     include "$root/private/views/donors.php";
