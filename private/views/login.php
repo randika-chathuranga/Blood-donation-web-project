@@ -29,7 +29,7 @@ include("templates/header.php");
                      <button type="submit" class=" btn btn-block send-button tx-tfm">Login</button>
                   </div>
                   <div class="col-md-12 ">
-                     <div class="login-or">
+                     <div class="login-or text-center">
                         <hr class="hr-or">
                         <span class="span-or">or</span>
                      </div>

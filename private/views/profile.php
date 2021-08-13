@@ -76,8 +76,10 @@ include("templates/header.php");
         </div>
         <div class="d-flex justify-content-center edit">
             <button type="button" class="btn btn-info" onclick="window.location.href='/edit';">Edit</button>
+            <button type="button" class="btn btn-danger" id="del">Delete Account</button>
         </div>
     </div>
 </div>
-
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="public/js/profile.js"></script>
 <?php include("templates/footer.php") ?>

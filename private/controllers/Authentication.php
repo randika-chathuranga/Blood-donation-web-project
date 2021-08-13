@@ -19,7 +19,7 @@ class Authentication
             if( password_verify($_REQUEST["password"],$user[0]->password)){
                 
                 setcookie("user", serialize($user[0]), time() + (3600 * 24), "/");
-                header("Location: /profile");
+                header("Location: /home");
                 exit;
             }
             else{
