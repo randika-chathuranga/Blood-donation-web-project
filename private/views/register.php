@@ -93,7 +93,7 @@ include("templates/header.php");
                             id="nic" />
                         </div>
                         <div class="form-group">
-                            <label for="">Adress</label>
+                            <label for="">Address</label>
                             <input type="text" class="form-control" <?php echo isset($_SESSION["data"]["adress"]) ? ($_SESSION["data"]["address"] !=null
                                 ? "value = " .$_SESSION["data"]["address"] : " placeholder = '2/b,colombo,Sri Lanka'") : " placeholder = '2/b,colombo,Sri Lanka'" ?>
                             name="address" id="address" />

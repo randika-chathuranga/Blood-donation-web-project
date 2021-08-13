@@ -38,6 +38,11 @@ Route::addPath("/profile", function () {
     include "$root/private/views/profile.php";
 });
 
+Route::addPath("/edit", function () {
+    $root = realpath($_SERVER["DOCUMENT_ROOT"]);
+    include "$root/private/views/edit.php";
+});
+
 Route::addPath("/donors", function () {
     $root = realpath($_SERVER["DOCUMENT_ROOT"]);
     include "$root/private/views/donors.php";
@@ -59,4 +64,7 @@ Route::addPath("/logout", function () {
 
 Route::addPath("/register/user", function () {
     UserController::create();
+});
+Route::addPath("/edit/user", function () {
+    UserController::update();
 });

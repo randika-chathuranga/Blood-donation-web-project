@@ -23,6 +23,7 @@ include("templates/header.php");
                   </div>
                   <div class="form-group">
                      <input type="password" name="password" id="password"  class="form-control my-input" placeholder="password">
+
                   </div>
                   <div class="text-center ">
                      <button type="submit" class=" btn btn-block send-button tx-tfm">Login</button>
